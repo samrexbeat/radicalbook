@@ -119,7 +119,7 @@ const Favorites: React.FC = () => {
                       </Box>
                     </div>
 
-                    <Link to="/favorites">
+                    <Link to={`/book/${result.id}`}>
                       <p className="p5 py-3 hover:underline">Edit</p>
                     </Link>
                     <button onClick={() => deleteBook(result.id)}>
